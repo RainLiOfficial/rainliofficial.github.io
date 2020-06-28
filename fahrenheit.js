@@ -14,7 +14,7 @@ function setQuery(evt) {
 }
 
 function getResults (query) {
-    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+    fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
       .then(weather => {
         return weather.json();
       }).then(displayResults);
@@ -32,15 +32,15 @@ function getResults (query) {
 
     let temp = document.querySelector('.current .temp');
     let intTemp= `${Math.round(weather.main.temp)}`;
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`;
 
     let weather_el = document.querySelector('.current .weather');
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.current .high-low');
-    hilow.innerText = `${Math.round(weather.main.temp_min)}°C/${Math.round(weather.main.temp_max)}°C`
+    hilow.innerText = `${Math.round(weather.main.temp_min)}°F/${Math.round(weather.main.temp_max)}°F`
 
-    if (intTemp<15){
+    if (intTemp<59){
       document.body.style.backgroundImage="url('blue.jpg')";
     }else{
       document.body.style.backgroundImage = "url('gradient.jpg')";
