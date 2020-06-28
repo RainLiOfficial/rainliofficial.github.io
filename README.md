@@ -1,7 +1,6 @@
 Rain or Shine, the weather app by Rain Li
 
-This is not your ordinary weather app, Rain or Shine one of the fastest and most efficient way to look up the weather of any city in the world. 
-Designed with speed in mind, while not sacrificsing the UI expirence. This miminalistic weather app can provide accurate and real time weather data for all.
+This is not your ordinary weather app, Rain or Shine one of the fastest and most efficient way to look up the weather of any city in the world. Designed with speed in mind, while not sacrificing the UI experience. This minimalistic weather app can provide accurate and real time weather data for all.
 <br><br>
 
 List of unique and cool features<br>
